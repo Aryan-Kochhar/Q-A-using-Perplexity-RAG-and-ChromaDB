@@ -42,7 +42,7 @@ def stream_perplexity_response(pdf_text, question):
                 "role": "system",
                 "content": f"""
                 You are a helpful assistant analyzing PDF documents. 
-                PDF Content: {pdf_text[:3000]}... [truncated if long]
+                PDF Content: {pdf_text}... [truncated if long]
                 """
             },
             {"role": "user", "content": question}
