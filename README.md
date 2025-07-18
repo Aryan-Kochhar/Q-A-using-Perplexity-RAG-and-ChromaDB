@@ -43,18 +43,26 @@ cd pdf-qa-perplexity
 ```
 
 ### 2. Create virtual env
+
+```bash
   python -m venv venv
   source venv/bin/activate  # For Windows: venv\Scripts\activate
+```
 
 ### 3. Install all packages and dependencies 
+
+```bash
   pip install -r requirements.txt
+```
 
 ### 4. Add api key in the .env folder
   PERPLEXITY_API_KEY=your_perplexity_api_key_here
   
 ### 5. Run the app
-  streamlit run app.py
 
+```bash
+  streamlit run app.py
+```
 
 
 
