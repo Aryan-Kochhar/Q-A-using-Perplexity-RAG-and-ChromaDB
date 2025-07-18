@@ -1,4 +1,4 @@
-# 📄 PDF Q&A with Perplexity AI
+# 📄 RAG-based Question Answering with Perplexity
 
 This project allows you to upload a PDF and ask natural language questions about its content using the [Perplexity AI](https://www.perplexity.ai) `sonar-pro` model.
 
