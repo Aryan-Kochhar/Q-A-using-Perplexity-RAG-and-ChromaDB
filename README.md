@@ -1,37 +1,46 @@
 # 📄 PDF Q&A with Perplexity AI
 
-An interactive Streamlit app that lets you upload a PDF, ask questions about its content, and get real-time answers powered by Perplexity AI's `sonar-pro` model.
+This project allows you to upload a PDF and ask natural language questions about its content using the [Perplexity AI](https://www.perplexity.ai) `sonar-pro` model.
+
+It includes two modes:
+
+- 🖥️ **Streamlit App** – A simple drag-and-drop web interface
+- 🌐 **Flask REST API** – A backend service you can integrate with your own frontend
 
 ---
 
 ## 🚀 Features
 
-- ✅ Upload and read PDF documents
-- 🤖 Ask natural language questions about the PDF content
-- 🔄 Stream live answers from Perplexity AI
-- 🧠 Uses the `sonar-pro` model via Perplexity API
-- 🧾 Simple and elegant Streamlit UI
+- ✅ Upload and extract text from PDF files
+- 🤖 Ask questions in plain English
+- 🔁 Stream or fetch responses via Perplexity API
+- 💡 Uses `sonar-pro` model for intelligent and fast answers
+- 📦 Two options: Web App (UI) & REST API (backend)
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 - **Python**
-- **Streamlit**
-- **PyMuPDF (`fitz`)**
-- **Perplexity AI API**
-- **dotenv**
+- **Streamlit** – Web interface
+- **Flask** – REST API
+- **PyMuPDF (`fitz`)** – PDF parsing
+- **requests** – HTTP requests to Perplexity API
+- **python-dotenv** – Load API keys securely from `.env`
 
 ---
 
-### File Structure is as: 
+## 📁 Project Structure
+
   pdf-qa-perplexity/
-  ├── app.py                # Main Streamlit app
-  ├── .env                  # Your Perplexity API key
-  ├── requirements.txt      # Required Python packages
-  └── README.md             # This file
+  ├── app.py # Streamlit App (UI)
+  ├── api.py # Flask API version
+  ├── .env # Contains your API key (not to be shared)
+  ├── requirements.txt # All required dependencies
+  └── README.md # This file
 
 ---
+
 
 ## 📥 Installation
 
@@ -45,14 +54,14 @@ cd pdf-qa-perplexity
 ### 2. Create virtual env
 
 ```bash
-  python -m venv venv
-  source venv/bin/activate  # For Windows: venv\Scripts\activate
+python -m venv venv
+source venv/bin/activate  # For Windows: venv\Scripts\activate
 ```
 
 ### 3. Install all packages and dependencies 
 
 ```bash
-  pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### 4. Add api key in the .env folder
@@ -61,11 +70,15 @@ cd pdf-qa-perplexity
 ### 5. Run the app
 
 ```bash
-  streamlit run app.py
+streamlit run app.py
 ```
 
+using RestAPI
 
+```bash
+python api.py
+```
 
-
+---
 
 
