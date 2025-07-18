@@ -31,15 +31,16 @@ It includes two modes:
 ---
 
 ## 📁 Project Structure
-
+```
   pdf-qa-perplexity/
-  ├── app.py # Streamlit App (UI)
-  ├── api.py # Flask API version
-  ├── .env # Contains your API key (not to be shared)
-  ├── requirements.txt # All required dependencies
-  └── README.md # This file
-
+  ├── app.py             # Streamlit App (UI)
+  ├── api.py             # Flask API version
+  ├── .env               # Contains your Perplexity API key (keep it secret)
+  ├── requirements.txt   # Python dependencies
+  └── README.md          # Project documentation
+```
 ---
+
 
 
 ## 📥 Installation
